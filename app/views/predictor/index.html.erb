@@ -1,0 +1,24 @@
+<div id="main">
+  <h1>Find out when you'll have traffic restriction</h1>
+  <%= form_tag :check_plates, :url => {:action => "check_plates"} %>
+    <fieldset id="data-fieldset">
+      <div>
+        <%= label_tag :license_plates, "License Plate Number" %>
+        <%= text_field_tag :license_plates, "", :placeholder => 'AAA0000', :required => 'required' %>
+      </div>
+
+      <div>
+        <%= label_tag :date, "Date" %>
+        <%= text_field_tag :date, "", :placeholder => "mm/dd/YYYY", :required => 'required' %>
+      </div>
+
+      <div>
+        <%= label_tag :time, "Time" %>
+        <%= time_select :time, "" %>
+      </div>
+
+      <div>
+        <%= submit_tag "Check" %>
+      </div>
+    </fieldset>
+</div>

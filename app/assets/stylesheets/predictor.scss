@@ -1,0 +1,30 @@
+// Place all the styles related to the predictor controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main {
+  margin: 0px auto;
+  float: none;
+  width: 800px;
+}
+#main h1 {
+  text-align: center;
+}
+#flash-messages {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0px auto;
+  width: 400px;
+}
+#data-fieldset {
+  margin: 0px auto;
+  float: none;
+  width: 400px;
+}
+#data-fieldset label {
+  width: 150px;
+  display: inline-block;
+}
+#data-fieldset input {
+  width: 100px;
+}
